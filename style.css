@@ -1,0 +1,102 @@
+header {
+    background: #0977e4;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header img{
+    width: 100px;
+    height: auto;
+  }
+  
+  h1 {
+    color: rgb(4, 220, 11);
+    font-family: 'Consolas';
+    font-size: 28px;
+  }
+  
+  
+  .hoverGroup:hover * {
+    fill: rgb(0, 255, 106);
+  }
+  
+  
+  main img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  
+  footer {
+    background: #0977e4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .mapMain {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    .mapMain {
+      order: 2;
+    }
+    .descrip {
+      order: 1;
+    }
+  }
+  
+  .descrip {
+    min-height: 600px; 
+    max-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #6a6262;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #infoImagen {
+    transition: opacity 0.5s ease-in-out;
+    max-height: 350px; 
+    object-fit: cover; 
+  }
+  
+  #infoTitulo {
+    font-size: 35px; 
+  }
+  
+  #infoTexto {
+    font-size: 22px;
+    max-height: 250px;
+    overflow-y: auto; 
+  }
+  #mapaSVG {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+
